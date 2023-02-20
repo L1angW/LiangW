@@ -1,0 +1,72 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "欢迎来到小梁的专属小屋",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": false
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/admin/littleSecret"
+		},
+		{
+			"path": "pages/life/recordLife"
+		},
+		{
+			"path": "pages/physiology/physiologicalPeriod"
+		},
+		{
+			"path": "pages/record/loveRecord"
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"selectedColor": "#3cc51f",
+		"list": [
+			{
+				"pagePath": "pages/record/loveRecord",
+				"iconPath": "static/homePage/edit.png",
+				"text": "恋爱记录"
+			},
+			{
+				"pagePath": "pages/physiology/physiologicalPeriod",
+				"iconPath": "static/homePage/calendar.png",
+				"text": "生理期"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/homePage/homePage.png",
+				"text": "我们的家"
+			},
+			{
+				"pagePath": "pages/life/recordLife",
+				"iconPath": "static/homePage/photograph.png",
+				"text": "记录生活"
+			},
+			{
+				"pagePath": "pages/admin/littleSecret",
+				"iconPath": "static/homePage/photograph.png",
+				"text": "小秘密"
+			}
+		]
+	}
+	
+}
